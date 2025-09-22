@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+ 
+{% block title %} магазинчик {% endblock %}
+
+    {% block content %} 
+
+    
+    
+    </p>привет бро, я знаю как тебя зовут: {{name}}</p>
+    {%
+        set rege = True
+         %}
+    <p>Возраст {{age}}<p> 
+        
+    {% if rege %}     
+        <p> вы зарегестрировались </p>   
+    {% else %}  
+        <p> чувак, ты не загеран </p>   
+    {% endif %}
+      
+    {% set user_list = [ "ilia" , "sonia" , "ira" , "nasty" ] %}
+    {% for user in user_list %}
+    <p> {{user}} </p>   
+    {% endfor %}
+
+{% endblock %}

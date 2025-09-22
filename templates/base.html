@@ -1,0 +1,28 @@
+{# это шаблон сайта #}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %} Hermaeus Mora {% endblock %} </title>
+</head>
+<body bgcolor="#696969" text = "#98ff98">
+
+    {% block nav %}
+    <ul>
+        <img src="blob:https://web.telegram.org/db8a86d2-b90d-45f2-86c9-3167f5f895bf.jpg" width="450" height="350">
+        <li><a href= "/">Главная страница</a></li>
+         <li><a href= "/catalog">каталог </a></li>
+        <li><a href= "/T-shorts">футболки </a></li>
+        <li><a href= "/hoodie">худи </a></li>
+        <li><a href= "/accessories">аксессуары </a></li>
+    </ul>
+    {% endblock %}
+
+    {% block content %}
+
+    {% endblock %}
+
+
+</body>
+</html>
